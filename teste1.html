@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!--link para importar css do slider-->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- link para importar a seta -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!--Link para importar o símbolo do menu-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+    <link rel="shortcut icon" href="/img/logo_fanta_games3.0.png">
+    <title>Fanta Games</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='teste1.css'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li ><a id="scroll" href="#container_banner"><div class="img"><img src="./img/logo_fanta_games3.0.png"></div></a></li>
+
+                <li ><a id="scroll" href="#container1">Galeria</a></li>
+
+                <li ><a id="scroll" href="#container-video">Vídeo</a></li>
+                
+                <li ><a id="scroll" href="#">Cardápio</a></li>
+
+                <li ><a id="scroll" href="#">Quem Somos</a></li>
+
+                <li class="menu">
+                    <div class="dropdown">
+                        <button class="material-symbols-outlined simbolo_menu">menu</button>
+                        <div class="dropdown-content">
+                            <a href="">Usuario</a>
+                            <a href="cadastro.html">Login</a>
+                            <a href="">Método de pagamento</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div class="container_banner" id="container_banner">
+            <div class="cortina"></div>
+            <video src="assets/video_fanta_games.mp4"  muted autoplay loop></video>
+        </div>
+        <div class="galeria_grande">
+            <div>
+                <h1 class="titulo">Fanta Games</h1>
+                <h2 class="titulo">Jogos fantásticos para alegrar seu dia ou te fazer pensar sobre a vida</h2>
+            </div>
+            <div class="galeria">
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/gow_1.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/gow_2.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/gow_3.webp">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/gow_4.avif">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/gow_rag.webp">
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/tlou_1.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/tlou_2.webp">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/hk.avif">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/ln_2.avif">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/ln_1.jpg">
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/roblox.webp">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/silksong.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/rdr2.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/thepk.jpg">
+                </div>
+                <div class="game">
+                    <div class="cortina"></div>
+                    <img src="./img/re7.webp">
+                </div>
+            </div>
+        </div>
+        <div id="container1" class="container1 swiper">
+            <div class="pacote_cartao" id="card-wrapper">
+                <ul class="lista_cartao swiper-wrapper">
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/miside.jpg" alt="">
+                            <p class="texto promo1">God of War</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/fortnite.jpg" alt="">
+                            <p class="texto promo2">God of War2</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/overwatch.png" alt="">
+                            <p class="texto promo3">God of War3</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/fall_guys.avif" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/rl.jpg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/mine.webp" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/undertale.webp" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/ddlc.webp" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/amogus.jpeg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/fnf-logo.png" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div id="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div id="container2" class="container2 swiper">
+            <div class="pacote_cartao" id="card-wrapper">
+                <ul class="lista_cartao swiper-wrapper">
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/sh2.avif" alt="">
+                            <p class="texto promo1">God of War</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/darkwood.avif" alt="">
+                            <p class="texto promo2">God of War2</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/Outlast.jpg" alt="">
+                            <p class="texto promo3">God of War3</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/madison.avif" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/slender.avif" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/lm's.jpg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/limbo.avif" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/condemned.jpeg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/ff.avif" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/ftf.jpg" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div id="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div id="container3" class="container3 swiper">
+            <div class="pacote_cartao" id="card-wrapper">
+                <ul class="lista_cartao swiper-wrapper">
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_botw.avif" alt="">
+                            <p class="texto promo1">God of War</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_totk.jpg" alt="">
+                            <p class="texto promo2">God of War2</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_oot.jpg" alt="">
+                            <p class="texto promo3">God of War3</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_majora's.jpg" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_ss.avif" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_tp.jpg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_eow.avif" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_lttp.jpg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/thelegendofzelda.jpeg" alt="">
+                            <p class="texto promo5">God of War5</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="item_cartao swiper-slide">
+                        <a href="#" class="link_cartao">
+                            <img src="./img/zelda_doi.png" alt="">
+                            <p class="texto promo4">God of War4</p>
+                            <h2 class="titulo_cartao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repellat!</h2>
+                            <button class="card-button
+                            material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div id="swiper-pagination"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div id="container-video" class="container-video"><video src="./assets/video_fanta_games.mp4" controls></video></div>
+        
+        <div id="promocoes" >
+
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2">
+            <input type="radio" name="radio" id="radio3">
+            <input type="radio" name="radio" id="radio4">
+            <input type="radio" name="radio" id="radio5">
+            <input type="radio" name="radio" id="radio6">
+
+            <ul>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/wow.webp">
+                        <h2 class="titulo_promo">WOW</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/gtav.jpg">
+                        <h2 class="titulo_promo">GTA V</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/gta_sa.jpg">
+                        <h2 class="titulo_promo">GTA SA</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/genshin.jpg">
+                        <h2 class="titulo_promo">Genshin Impact</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/hitman.jpg">
+                        <h2 class="titulo_promo">Hitman</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="fundo_cartao">
+                        <img src="./img/it_takes_two.jpg">
+                        <h2 class="titulo_promo">It Takes Two</h2>
+                        <p class="descricao_promo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="cortina_promo"></div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wave-container">
+            <p class="wave-text1">© Todos os Direitos Reservados</p>
+            <p class="wave-text2">Contato: 992304982</p>
+            <p class="wave-text3"><a href="https://www.instagram.com/" target="_blank"><img src="/img/logo_insta.jpg"></a></p>
+            <p class="wave-text4"><a href="https://x.com/?lang=pt&mx=2" target="_blank"><img src="/img/logo_twitter.jpg"></a></p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 256">
+                <path fill="#000" transform="scale(1, -1) translate(0, -256)" d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,160C672,181,768,203,864,202.7C960,203,1056,181,1152,186.7C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+              </svg>              
+        </div>
+    </footer>
+    
+    <!--Link importando js do slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src='script.js'></script>
+</body>
+</html>
