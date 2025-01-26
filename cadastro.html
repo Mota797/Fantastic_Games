@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link para importar o símbolo do menu-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+        <link rel="shortcut icon" href="/img/logo_fanta_games3.0.png">
+        <link rel="stylesheet" href="cadastro.css">
+        <title>Fanta Games</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="teste1.html#container_banner"><div class="img"><img src="./img/logo_fanta_games3.0.png"></div></a></li>
+    
+                    <li><a href="teste1.html#container1">Galeria</a></li>
+    
+                    <li><a href="teste1.html#container-video">Vídeo</a></li>
+                    
+                    <li><a href="#">Cardápio</a></li>
+    
+                    <li><a href="#">Quem Somos</a></li>
+    
+                    <li class="menu">
+                        <div class="dropdown">
+                            <button class="material-symbols-outlined simbolo_menu">menu</button>
+                            <div class="dropdown-content">
+                                <a href="#">Usuario</a>
+                                <a href="#">Login</a>
+                                <a href="#">Método de pagamento</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
+        <main>
+            <h1>Área de Cadastro</h1>
+            <div class="area_cadastro">
+                <form onsubmit="return validar_user()" action="confirmar.html">
+                    
+                    <div class="grupo_form campo_nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite Seu Nome...">
+                        <div id="campo_nome"></div>
+                    </div>
+                    <div class="grupo_form campo_sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite Seu Sobrenome...">
+                        <div id="campo_sobrenome"></div>
+                    </div>
+                    <div class="grupo_form campo_nick">
+                        <label for="nick">Nick</label>
+                        <input type="text" name="nick" id="nick" placeholder="Digite Seu Nickname...">
+                        <div id="campo_nick"></div>
+                    </div>
+                    <div class="grupo_form campo_idade">
+                        <label for="idade">Idade</label>
+                        <input type="text" name="idade" id="idade" min="0" max="100" placeholder="Digite Sua Idade..." >
+                        <div id="campo_idade"></div>
+                    </div>
+                    <div class="grupo_form campo_email">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Digite Seu Email...">
+                        <div id="campo_email"></div>
+                    </div>
+                    <div class="grupo_form campo_senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite Uma Senha Forte...">
+                        <div id="campo_senha"></div>
+                    </div>
+                    <div class="grupo_form campo_confirmar">
+                        <label for="confirmar">Confirmar Senha</label>
+                        <input type="password" name="confirmar" id="confirmar" placeholder="Confirme Sua Senha...">
+                        <div id="campo_confirmar"></div>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="submit botao">
+                    <input type="reset" value="Apagar" class="reset botao">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="wave-container">
+                <p class="wave-text1">© Todos os Direitos Reservados</p>
+                <p class="wave-text2">Contato: 992304982</p>
+                <p class="wave-text3"><a href="https://www.instagram.com/" target="_blank"><img src="/img/logo_insta.jpg"></a></p>
+                <p class="wave-text4"><a href="https://x.com/?lang=pt&mx=2" target="_blank"><img src="/img/logo_twitter.jpg"></a></p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 256">
+                    <path fill="#000" transform="scale(1, -1) translate(0, -256)" d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,160C672,181,768,203,864,202.7C960,203,1056,181,1152,186.7C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                  </svg>              
+            </div>
+        </footer>
+        <script src="cadastro.js"></script>
+    </body>
+</html>
