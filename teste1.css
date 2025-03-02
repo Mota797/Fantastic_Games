@@ -269,7 +269,7 @@ video{
 #promocoes {
   display: block;
   overflow: hidden; 
-  width: 100vw; 
+  width: 99.1vw; 
   height: 100vh; 
 }
 #promocoes ul {
@@ -278,36 +278,60 @@ video{
   flex-direction: row;
 }
  #promocoes ul .cartao img{
-  width: auto;
-  height: 500px;
-  border-radius: 5px;
-  margin: 5px;
+  width: 100%;
+  height: 95%;
+  border-radius: 40px;
+  object-fit: cover;
+  margin: 15px 70px;
 }
 #promocoes ul .cartao .titulo_promo, .descricao_promo{
+  top: 90%;
+  left: 40%;
+  position: absolute;
   color: #fff;
-  z-index: 1;
+  z-index: 3;
+}
+#promocoes ul .cartao .titulo_promo{
+  top: 85%;
+  left: 40%;
+  text-align: center;
+}
+.cortina_promo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 1000%;
+  background-color: rgba(14, 9, 34, 0.7); /* Ajuste o valor alfa para o nível de transparência */
+  pointer-events: none; /* Permite interação com o elemento abaixo (a imagem) */
+  z-index: 1; 
 }
 .cartao {
   flex-shrink: 0;
   width: 100vw; 
   height: 100vh; 
   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
   background-color: #000; 
 }
-
+.manual-navigation{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px;
+}
 .manual-btn {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: 2px solid #fff;
   display: inline-block;
-  margin: 5px;
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.radio{
+  background-color: transparent;
+  position: absolute;
 }
 
 #radio1:checked ~ .manual-navigation .manual-btn:nth-child(1),
@@ -321,27 +345,35 @@ video{
 #promocoes ul {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(300px * 6);
+  width: 600vw;
+  /* width: calc(300px * 6); */
   height: 100vh;
+  opacity: 1;
 }
 
-#radio1:checked ~ ul {
+#radio1:checked ~ ul .cartao {
   transform: translateX(0px);
+  opacity: 1;
 }
-#radio2:checked ~ ul {
+#radio2:checked ~ ul .cartao {
   transform: translateX(-100vw);
+  opacity: 1;
 }
-#radio3:checked ~ ul {
+#radio3:checked ~ ul .cartao {
   transform: translateX(-200vw);
+  opacity: 1;
 }
-#radio4:checked ~ ul {
+#radio4:checked ~ ul .cartao {
   transform: translateX(-300vw);
+  opacity: 1;
 }
-#radio5:checked ~ ul {
+#radio5:checked ~ ul .cartao {
   transform: translateX(-400vw);
+  opacity: 1;
 }
-#radio6:checked ~ ul {
+#radio6:checked ~ ul .cartao {
   transform: translateX(-500vw);
+  opacity: 1;
 }
 
 
@@ -360,6 +392,7 @@ video{
 }
 
 .wave-container {
+  pointer-events: none;
   position: relative;
   color: white; /* Cor do texto */
   width: 100%;
